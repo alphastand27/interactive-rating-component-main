@@ -9,20 +9,20 @@ const intro = `
         Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!
     </p>
-    <section id="rating">
-        <a class="rates" href="#f">1</a>
-        <a class="rates" href="#f">2</a>
-        <a class="rates" href="#f">3</a>
-        <a class="rates" href="#f">4</a>
-        <a class="rates" href="#f">5</a>
+    <section id="rating" class="container text-center">
+        <div class="rates">1</div>
+        <div class="rates">2</div>
+        <div class="rates">3</div>
+        <div class="rates">4</div>
+        <div class="rates">5</div>
     </section>
-    <button type="submit">SUBMIT</button>
+    <button id="button" type="submit" class="container text-center">SUBMIT</button>
 `;
 
 const outro = `
-    <img id="star-icon" src="${illustration}" alt="star icon">
+    <img id="illustration" src="${illustration}" alt="a thank you illustration">
     <h1 id="thanks">Thank you!</h1>
-    <p id="selected">You selected ${"<!-- Add rating here -->"} out of 5</p>
+    <p id="selected">You selected 4 out of 5</p>
     <p id="detailed-thanks">
         We appreciate you taking the time to give a rating. If you ever need more support, 
         don’t hesitate to get in touch!
