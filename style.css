@@ -1,10 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*
+* Mobile first design
+* Below is the mobile design
+*/
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --lighter-Grey: hsla(217, 12%, 63%, 0.096);
+}
+
+body {
+    background-color: var(--Very-Dark-Blue) !important;
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Dark-Blue);
+    max-width: 375px;
+    margin: 15% auto 5% auto;
+    padding: 10% 5% 10% 5%;
+    border-radius: 13px;
+}
+
+#star-icon {
+    background-color: var(--lighter-Grey);
+    border-radius: 50%;
+    width: 15%;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+
+#illustration {
+    width: 48%;
+    margin: auto;
+    order: 1
+}
+
+#question, #thanks {
+    color: var(--White);
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: 5%;
+}
+
+#thanks {
+    order: 3;
+    text-align: center;
+    margin: 10% auto auto auto;
+}
+
+#selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+    margin: 10% auto auto auto;
+    color: var(--Orange);
+    background-color: var(--lighter-Grey);
+    border-radius: 45px;
+    font-weight: 400;
+    width: 60%;
+    height: 30px;
+}
+
+#details, #detailed-thanks {
+    color: var(--Light-Grey);
+    font-weight: 400;
+}
+
+#details {
+    font-size: 16px;
+}
+
+#detailed-thanks {
+    order: 4;
+    text-align: center;
+    margin: 4% 0% 0% 0%;
+}
+
+#rating {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% auto 8% -3%;
+}
+
+.rates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Light-Grey);
+    background-color: var(--lighter-Grey);
+    border-radius: 50%;
+    width: 15%;
+    height: 45px;
+}
+
+.rates:hover {
+    color: var(--Dark-Blue);
+    background-color: var(--Orange);
+    cursor: pointer;
+}
+
+#button {
+    border: none;
+    border-radius: 40px;
+    height: 45px;
+    color: var(--Dark-Blue);
+    background-color: var(--Orange);
+    letter-spacing: 2px;
+}
+
+#button:hover {
+    background-color: var(--White);
+    cursor: pointer;
+}
 
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    color: var(--Dark-Blue);
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--Light-Grey); 
+}
+
+/*
+* Below is the tablet design
+*/
+@media only screen and (min-width: 600px) {
+    #container {
+        max-width: 380px;
+        padding: 5% 2% 10% 2%;
+    }
+}
+
+/*
+* Below is the desktop design
+*/
+@media only screen and (min-width: 820px) {
+    #container {
+        max-width: 440px;
+        margin: 10% auto 5% auto;
+        padding: 2.5% 2.5% 2% 2.5%;
+        border-radius: 25px;
+    }
+
+    #question, #thanks {
+        font-size: 29px;
+    }
+
+    .rates {
+        width: 15%;
+        height: 50px;
+    }
+
+    #detailed-thanks {
+        font-size: 15.5px;
+    }
 }
