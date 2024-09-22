@@ -39,14 +39,14 @@ body {
 
 #illustration {
     width: 48%;
-    margin: auto;
+    margin: auto 25%;
     order: 1
 }
 
 #question, #thanks {
     color: var(--White);
     font-weight: 700;
-    font-size: 27px;
+    font-size: 26.5px;
     margin-bottom: 5%;
 }
 
@@ -66,8 +66,9 @@ body {
     background-color: var(--lighter-Grey);
     border-radius: 45px;
     font-weight: 400;
-    width: 60%;
-    height: 30px;
+    width: 56%;
+    height: 32px;
+    font-size: 15.5px;
 }
 
 #details, #detailed-thanks {
@@ -75,13 +76,10 @@ body {
     font-weight: 400;
 }
 
-#details {
-    font-size: 16px;
-}
-
 #detailed-thanks {
     order: 4;
     text-align: center;
+    font-size: 15px;
     margin: 4% 0% 0% 0%;
 }
 
@@ -99,7 +97,7 @@ body {
     background-color: var(--lighter-Grey);
     border-radius: 50%;
     width: 15%;
-    height: 45px;
+    height: 44px;
 }
 
 .rates:hover {
@@ -115,6 +113,7 @@ body {
     color: var(--Dark-Blue);
     background-color: var(--Orange);
     letter-spacing: 2px;
+    font-size: 15px;
 }
 
 #button:hover {
@@ -157,9 +156,15 @@ body {
         font-size: 29px;
     }
 
+    #selected {
+        border-radius: 25px;
+        width: 55%;
+        height: 35px;
+    }
+
     .rates {
         width: 15%;
-        height: 50px;
+        height: 49px;
     }
 
     #detailed-thanks {
